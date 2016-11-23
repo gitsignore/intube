@@ -1,0 +1,18 @@
+<div class="text-right">
+  <a class="btn btn-success">Leave a Review</a>
+</div>
+<div>
+  <%= form_for([@movie, @movie.comments.build]) do |f| %>
+      <p>
+        <%= f.label :commenter %><br>
+        <%= f.text_field :commenter %>
+      </p>
+      <p>
+        <%= f.label :body %><br>
+        <%= f.text_area :body %>
+      </p>
+      <p>
+        <%= f.submit %>
+      </p>
+  <% end %>
+</div>
