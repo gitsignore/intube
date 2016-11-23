@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  http_basic_authenticate_with name: "bo", password: "bo", only: :destroy
+
   def create
     @movie = Movie.find(params[:movie_id])
     @comment = @movie.comments.create(comment_params)
