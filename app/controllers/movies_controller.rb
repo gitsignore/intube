@@ -1,6 +1,8 @@
 class MoviesController < ApplicationController
   http_basic_authenticate_with name: "bo", password: "bo", except: [:index, :show]
 
+  helper MoviesHelper
+
   def index
     if params[:search]
       @movies = Movie.search(params[:search])

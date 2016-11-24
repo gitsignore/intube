@@ -1,4 +1,4 @@
-<%= form_for @category do |f| %>
+<%= form_for @category, :html => {:class => 'form-inline'} do |f| %>
 
     <% if @category.errors.any? %>
         <div id="error_explanation">
@@ -14,13 +14,10 @@
         </div>
     <% end %>
 
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title %>
-    </p>
+    <div class="form-group">
+      <%= f.label :title, 'Category title', :class => 'sr-only' %>
+      <%= f.text_field :title, :class => 'form-control', :placeholder => 'Category title'  %>
+    </div>
 
-    <p>
-      <%= f.submit %>
-    </p>
-
+    <%= f.submit 'submit', :class => 'btn btn-success' %>
 <% end %>

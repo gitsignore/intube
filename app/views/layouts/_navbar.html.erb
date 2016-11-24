@@ -15,15 +15,11 @@
 
         <ul class="nav navbar-nav">
           <li><%= link_to "Categories", { :controller => "categories" } %></li>
-          <li><%= link_to "Movies", { :controller => "movies" } %></li>
+          <li><%= link_to "Videos", { :controller => "movies" } %></li>
         </ul>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <%= form_tag(movies_path, :method => "get", class: "navbar-form navbar-left") do %>
-              <%= text_field_tag :search, params[:search], placeholder: "Search movies", class: "form-control" %>
-              <%= submit_tag "Search", class: "btn btn-default" %>
-          <% end %>
-        </div><!-- /.navbar-collapse -->
+
+        <%= render 'layouts/form' %>
+
       </div><!-- /.container-fluid -->
     </nav>
   </div>
