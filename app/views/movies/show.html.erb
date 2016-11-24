@@ -7,7 +7,7 @@
           <i class="glyphicon glyphicon-pencil text-warning"></i> Edit
       <% end %>
       <%= link_to movie_path(@movie), method: :delete, data: {confirm: 'Are you sure?'}, class: "list-group-item" do %>
-          <i class="glyphicon glyphicon-trash text-danger"></i> Delete category
+          <i class="glyphicon glyphicon-trash text-danger"></i> Delete video
       <% end %>
       <%= link_to category_path(@movie.category_id), class: "list-group-item" do %>
           <i class="glyphicon glyphicon-menu-left text-primary"></i> Back to category
