@@ -9,13 +9,15 @@
 </head>
 <body>
 
+<% if current_user %>
     <%= render 'layouts/navbar' %>
+<% end %>
 
-    <div class="container" style="padding-top: 70px">
-      <%= yield %>
-    </div>
+<div class="container" style="padding-top: 70px">
+  <%= yield %>
+</div>
 
-    <%= render 'layouts/footer' %>
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
