@@ -18,7 +18,7 @@ class MoviesController < ApplicationController
   end
 
   def create
-    @movie = Movie.new(article_params)
+    @movie = Movie.new(movie_params)
 
     if @movie.save
       redirect_to @movie
@@ -45,7 +45,7 @@ class MoviesController < ApplicationController
   end
 
   private
-  def article_params
+  def movie_params
     params.require(:movie).permit(:title, :text, :url)
   end
 end
