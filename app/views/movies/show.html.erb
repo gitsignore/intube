@@ -1,21 +1,24 @@
 <div class="row">
 
   <div class="col-md-3">
-    <p class="lead">Movies Categories</p>
+    <p class="lead">Videos</p>
     <div class="list-group">
-      <a href="#" class="list-group-item active">Category 1</a>
-      <a href="#" class="list-group-item">Category 2</a>
-      <a href="#" class="list-group-item">Category 3</a>
+      <%= link_to 'Edit', edit_movie_path(@movie), class: "list-group-item" %>
+      <%= link_to 'Back', movies_path, class: "list-group-item" %>
     </div>
 
-    <%= link_to 'Edit', edit_movie_path(@movie) %> |
-    <%= link_to 'Back', movies_path %>
+    <br>
+
+    <%= render 'categories' %>
+
   </div>
 
   <div class="col-md-9">
 
     <div class="thumbnail">
-      <iframe width="800" height="300" src="<%= @movie.url %>" frameborder="0" allowfullscreen></iframe>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="830" height="300" src="<%= @movie.url %>" frameborder="0" allowfullscreen></iframe>
+      </div>
       <div class="caption-full">
         <h4><%= @movie.title %></h4>
         <p><%= @movie.title %></p>

@@ -8,11 +8,13 @@ class MoviesController < ApplicationController
       @movies = Movie.search(params[:search])
     else
       @movies = Movie.all
+      @categories = Category.order("title").all
     end
   end
 
   def show
     @movie = Movie.find(params[:id])
+    @categories = Category.order("title").all
   end
 
   def new
