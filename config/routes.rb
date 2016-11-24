@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  root 'categories#index'
+  root 'movies#index'
 end
