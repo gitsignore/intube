@@ -1,0 +1,7 @@
+<div class="thumbnail">
+  <div class="caption-full">
+    <h4><%= link_to movie.title, movie_path(movie) %></h4>
+    <p><%= movie.text %></p>
+    <p><%= link_to 'Delete', movie, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  </div>
+</div>
