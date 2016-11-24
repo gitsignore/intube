@@ -1,12 +1,20 @@
 class MoviesController < ApplicationController
   http_basic_authenticate_with name: "bo", password: "bo", except: [:index, :show]
 
+  helper MoviesHelper
+
   def index
-    @movies = Movie.all
+    if params[:search]
+      @movies = Movie.search(params[:search])
+    else
+      @movies = Movie.all
+    end
+    @categories = Category.order("title").all
   end
 
   def show
     @movie = Movie.find(params[:id])
+    @categories = Category.order("title").all
   end
 
   def new
@@ -46,6 +54,6 @@ class MoviesController < ApplicationController
 
   private
   def movie_params
-    params.require(:movie).permit(:title, :text, :url)
+    params.require(:movie).permit(:title, :text, :url, :category_id)
   end
 end

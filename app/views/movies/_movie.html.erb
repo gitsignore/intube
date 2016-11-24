@@ -1,0 +1,11 @@
+<div class="col-sm-4 col-lg-4 col-md-4">
+  <div class="thumbnail">
+    <img src="<%= format_youtube_thumbnail(movie.url) %>" alt="<%= movie.title %>">
+    <div class="caption">
+      <h4><%= link_to movie.title, movie_path(movie) %></h4>
+      <%= link_to 'Edit', edit_movie_path(movie) %>
+      <%= link_to 'Delete', movie_path(movie), method: :delete, data: {confirm: 'Are you sure?'}, class: "pull-right" %>
+      <p><%= movie.text %></p>
+    </div>
+  </div>
+</div>
