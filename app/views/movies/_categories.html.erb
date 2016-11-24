@@ -1,6 +1,8 @@
 <p class="lead">Movies Categories</p>
 <div class="list-group">
   <% @categories.each do |category| -%>
-      <%= link_to category.title, category_path(category), class: "list-group-item" %>
+      <%= link_to category_path(category), class: "list-group-item" do %>
+          <span class="badge"><%= category.movies.count %></span> <%= category.title %>
+          <% end %>
   <% end -%>
 </div>

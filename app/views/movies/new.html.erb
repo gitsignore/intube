@@ -3,7 +3,9 @@
   <div class="col-md-3">
     <p class="lead">New video</p>
     <div class="list-group">
-      <%= link_to 'Back to videos', movies_path, class: "list-group-item" %>
+      <%= link_to movies_path, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-menu-left text-primary"></i> Back to videos
+      <% end %>
     </div>
   </div>
 

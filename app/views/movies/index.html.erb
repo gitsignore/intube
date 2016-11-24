@@ -3,7 +3,9 @@
   <div class="col-md-3">
     <p class="lead">Videos</p>
     <div class="list-group">
-      <%= link_to 'Add a video', new_movie_path, class: "list-group-item" %>
+      <%= link_to new_movie_path, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-plus text-success"></i> Add a video
+      <% end %>
     </div>
 
     <br>
@@ -24,7 +26,7 @@
                 <h4><%= link_to movie.title, movie_path(movie) %></h4>
                 <p><%= link_to 'Edit', edit_movie_path(movie) %></p>
                 <p><%= link_to 'Delete', movie_path(movie), method: :delete, data: {confirm: 'Are you sure?'} %></p>
-                <p><%= movie.text %></p>
+                <p><%= h truncate(movie.text, :length => 100) %></p>
               </div>
               <!--<div class="ratings">
                 <p class="pull-right">15 reviews</p>
