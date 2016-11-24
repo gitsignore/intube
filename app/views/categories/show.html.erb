@@ -3,9 +3,24 @@
     <p class="lead"><%= @category.title %></p>
 
     <div class="list-group">
-      <%= link_to 'Edit category', edit_category_path(@category), class: "list-group-item" %>
-      <%= link_to 'Delete category', category_path(@category), method: :delete, data: {confirm: 'Are you sure?'}, class: "list-group-item" %>
-      <%= link_to 'Back to categories', categories_path, class: "list-group-item" %>
+      <%= link_to edit_category_path(@category), class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-pencil text-warning"></i> Edit category
+      <% end %>
+      <%= link_to category_path(@category), method: :delete, data: {confirm: 'Are you sure?'}, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-trash text-danger"></i> Delete category
+      <% end %>
+      <%= link_to categories_path, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-menu-left text-primary"></i> Back to categories
+      <% end %>
+    </div>
+
+    <%= render 'movies/categories' %>
+
+    <p class="lead">Video</p>
+    <div class="list-group">
+      <%= link_to new_movie_path, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-plus text-success"></i> Add new video
+      <% end %>
     </div>
   </div>
 

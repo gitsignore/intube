@@ -3,7 +3,9 @@
   <div class="col-md-3">
     <p class="lead">New category</p>
     <div class="list-group">
-      <%= link_to 'Back to categories', categories_path, class: "list-group-item" %>
+      <%= link_to categories_path, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-menu-left"></i> Back to categories
+      <% end %>
     </div>
   </div>
 

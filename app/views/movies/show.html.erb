@@ -3,8 +3,15 @@
   <div class="col-md-3">
     <p class="lead">Videos</p>
     <div class="list-group">
-      <%= link_to 'Edit', edit_movie_path(@movie), class: "list-group-item" %>
-      <%= link_to 'Back', movies_path, class: "list-group-item" %>
+      <%= link_to edit_movie_path(@movie), class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-pencil text-warning"></i> Edit
+      <% end %>
+      <%= link_to movie_path(@movie), method: :delete, data: {confirm: 'Are you sure?'}, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-trash text-danger"></i> Delete category
+      <% end %>
+      <%= link_to category_path(@movie.category_id), class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-menu-left text-primary"></i> Back to category
+      <% end %>
     </div>
 
     <br>
@@ -21,7 +28,7 @@
       </div>
       <div class="caption-full">
         <h4><%= @movie.title %></h4>
-        <p><%= @movie.title %></p>
+        <p><%= @movie.text %></p>
       </div>
       <!--<div class="ratings">
         <p class="pull-right">3 reviews</p>
@@ -39,6 +46,8 @@
     <div class="well">
 
       <%= render 'comments/form' %>
+
+      <br>
 
       <hr>
 

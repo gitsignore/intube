@@ -2,7 +2,9 @@
 
   <div class="col-md-3">
     <div class="list-group">
-      <%= link_to 'Add a category', new_category_path, class: "list-group-item" %>
+      <%= link_to new_category_path, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-plus text-success"></i> Add a category
+      <% end %>
     </div>
   </div>
 
