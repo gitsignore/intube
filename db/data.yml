@@ -1,0 +1,190 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2016-11-24 18:07:15.732788'
+    - '2016-11-24 18:07:15.732788'
+
+---
+categories:
+  columns:
+  - id
+  - title
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Music
+    - '2016-11-24 18:43:10.817647'
+    - '2016-11-24 18:43:10.817647'
+  - - 2
+    - Hardware Test
+    - '2016-11-24 21:22:57.323687'
+    - '2016-11-25 13:12:16.690257'
+  - - 3
+    - Live
+    - '2016-11-24 21:34:38.447545'
+    - '2016-11-24 21:34:38.447545'
+
+---
+comments:
+  columns:
+  - id
+  - commenter
+  - body
+  - movie_id
+  - created_at
+  - updated_at
+  records: 
+  - - 3
+    - Maxime Signoret
+    - Second commentaire
+    - 1
+    - '2016-11-25 10:10:07.892403'
+    - '2016-11-25 10:10:07.892403'
+
+---
+movies:
+  columns:
+  - id
+  - title
+  - text
+  - url
+  - category_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - TEST OnePlus 3T
+    - "Le nouveau smartphone de OnePlus est sorti en fanfare. Le OnePlus 3T garde
+      les atouts majeurs du OnePlus 3 : un prix accessible et de la puissance. Niveau
+      autonomie, il est impeccable et affiche de belles performances qui en font un
+      smartphone vraiment séduisant. Malheureusement, il ne fait pas le match du point
+      de vue de la photo. \r\nDans les lumières sombres il s'en sort même moins bien
+      que ses prédécesseurs. Défaut que la marque saura peut-être faire évoluer prochainement,
+      car il ne semble pas que cela vienne d'un capteur trop faible... Découvrez ce
+      nouveau smartphone avec Raphaël Grably de 01net.com !"
+    - https://www.youtube.com/embed/GDiaQf5alVE
+    - 2
+    - '2016-11-24 19:50:35.296282'
+    - '2016-11-24 21:28:50.850876'
+  - - 2
+    - MUSE - Revolt
+    - "Watch the “Revolt” 360° music video now!\r\n\r\nOriginally released last November
+      on the VRSE app, the video is is now available on YouTube."
+    - https://www.youtube.com/embed/91fQTXrSRZE
+    - 1
+    - '2016-11-24 21:27:20.853617'
+    - '2016-11-24 21:27:20.853617'
+  - - 3
+    - MUSE - Aftermath
+    - "Watch the new music video for “Aftermath” now!\r\n\r\nThe video is the result
+      of Muse’s on-going creative collaborations with Japanese director Tekken, who
+      previously delivered eye-catching, flipbook-style animated videos for the band’s
+      tracks “Follow Me” and “Exogenesis: Symphony Part 3 (Redemption)”. "
+    - https://www.youtube.com/embed/YkB9a_DR-7A
+    - 1
+    - '2016-11-24 21:28:21.895920'
+    - '2016-11-24 21:28:21.895920'
+  - - 4
+    - Muse - Mercy
+    - "Watch the music video for \"Mercy\" now!\r\n\r\nDirected by Sing J Lee\r\n\r\nMuse
+      Band"
+    - https://www.youtube.com/embed/yj8Xpdx60Ws
+    - 1
+    - '2016-11-24 21:29:44.097399'
+    - '2016-11-24 21:39:39.441901'
+  - - 5
+    - Muse - JFK + Defector
+    - "Muse's new album, DRONES, is out now!\r\n\r\nGet the new album now on CD, CD+DVD,
+      12\" double gatefold 180g vinyl, digital download or the exclusive muse.mu deluxe
+      package with CD/DVD/tri-fold vinyl."
+    - https://www.youtube.com/embed/kzbFxLNpguM
+    - 1
+    - '2016-11-24 21:30:31.244430'
+    - '2016-11-24 21:30:31.244430'
+  - - 6
+    - Muse - The Handler
+    - "Muse's new album, DRONES, is out now!\r\n\r\nGet the new album now on CD, CD+DVD,
+      12\" double gatefold 180g vinyl, digital download or the exclusive muse.mu deluxe
+      package with CD/DVD/tri-fold vinyl."
+    - https://www.youtube.com/embed/BF1DQr5dKW8
+    - 1
+    - '2016-11-24 21:31:15.137088'
+    - '2016-11-24 21:31:15.137088'
+  - - 7
+    - Muse - Reapers
+    - "Muse's new album, DRONES, is out now!\r\n\r\nGet the new album now on CD, CD+DVD,
+      12\" double gatefold 180g vinyl, digital download or the exclusive muse.mu deluxe
+      package with CD/DVD/tri-fold vinyl.\r\n\r\nDirector - Tom Kirk\r\nProduced by
+      - Banoffee Sky\r\nEditor and VFX - Rowan Glenn\r\nDrones Filming - Drones Plus\r\nPilot
+      filmed by Matt Hayslett\r\nBand Performance filmed by Liam Iandoli and Daniel
+      Salter\r\nActor - Micky Shiloah\r\nActor - Alexandria Basso"
+    - https://www.youtube.com/embed/gcNEC9NaJuE
+    - 1
+    - '2016-11-24 21:31:58.887944'
+    - '2016-11-24 21:31:58.887944'
+  - - 8
+    - Muse - Dead Inside
+    - "Muse's new album, DRONES, is out now!\r\n\r\nGet the new album now on CD, CD+DVD,
+      12\" double gatefold 180g vinyl, digital download or the exclusive muse.mu deluxe
+      package with CD/DVD/tri-fold vinyl."
+    - https://www.youtube.com/embed/I5sJhSNUkwQ
+    - 1
+    - '2016-11-24 21:32:43.516870'
+    - '2016-11-24 21:32:43.516870'
+  - - 9
+    - Muse - Psycho
+    - "Muse's new album, DRONES, is out now!\r\n\r\nGet the new album now on CD, CD+DVD,
+      12\" double gatefold 180g vinyl, digital download or the exclusive muse.mu deluxe
+      package with CD/DVD/tri-fold vinyl."
+    - https://www.youtube.com/embed/UqLRqzTp6Rk
+    - 1
+    - '2016-11-24 21:33:32.626856'
+    - '2016-11-24 21:33:32.626856'
+  - - 10
+    - Muse - Supremacy
+    - "© 2013 WMG | Watch the official lyric video for Supremacy by Muse. "
+    - https://www.youtube.com/embed/XJ2S2_TpWN8
+    - 1
+    - '2016-11-24 21:34:24.853854'
+    - '2016-11-24 21:34:24.853854'
+  - - 11
+    - Muse - Live At Rome Olympic Stadium
+    - "Check out the trailer of Muse - Live At Rome Olympic Stadium. \r\n\r\nThis
+      is the first ever concert film shot in 4k Ultra High Definition."
+    - https://www.youtube.com/embed/Igd3v5xrct8
+    - 3
+    - '2016-11-24 21:35:18.315083'
+    - '2016-11-24 21:35:18.315083'
+  - - 12
+    - Twenty One Pilots - Live At Reading 2016
+    - Twenty One Pilots at READING FESTIVAL 2016
+    - https://www.youtube.com/embed/UYxjExAefj4
+    - 3
+    - '2016-11-24 21:36:20.556339'
+    - '2016-11-24 21:36:20.556339'
+
+---
+users:
+  columns:
+  - id
+  - name
+  - email
+  - password_digest
+  - created_at
+  - updated_at
+  records: 
+  - - 2
+    - Maxime Signoret
+    - test@test.com
+    - "$2a$10$k19sS1s2AWtgR6w0Ua.T7.xj6nMc/cGtihC.4HswOqKqrvwc/4ZuW"
+    - '2016-11-25 14:10:48.565028'
+    - '2016-11-25 14:10:48.565028'
