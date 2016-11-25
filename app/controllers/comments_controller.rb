@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-  http_basic_authenticate_with name: "bo", password: "bo", only: :destroy
   before_filter :authorize
 
   def create

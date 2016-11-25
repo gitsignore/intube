@@ -1,5 +1,4 @@
 class CategoriesController < ApplicationController
-  http_basic_authenticate_with name: "bo", password: "bo", except: [:index, :show]
   before_filter :authorize
 
   def index
