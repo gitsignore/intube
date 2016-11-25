@@ -3,7 +3,7 @@
     <img src="<%= format_youtube_thumbnail(movie.url) %>" alt="<%= movie.title %>">
     <div class="caption">
       <h4><%= link_to movie.title, movie_path(movie) %></h4>
-      <p><%=h truncate(movie.text, :length => 100) %></p>
+      <p><%= h truncate(movie.text, :length => 100) %></p>
     </div>
   </div>
 </div>

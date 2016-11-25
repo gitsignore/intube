@@ -17,9 +17,11 @@
   <div class="col-md-9">
 
     <div class="row">
-
-      <%= render @movies %>
-
+      <% if !@movies.empty? %>
+        <%= render @movies %>
+      <% else %>
+        <h2 class="text-white text-center">No videos available.</h2>
+      <% end %>
     </div>
 
   </div>

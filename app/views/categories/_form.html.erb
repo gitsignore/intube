@@ -1,23 +1,17 @@
 <%= form_for @category, :html => {:class => 'form-inline'} do |f| %>
-
-    <% if @category.errors.any? %>
-        <div id="error_explanation">
-          <h2>
-            <%= pluralize(@category.errors.count, "error") %> prohibited
-            this category from being saved:
-          </h2>
-          <ul>
-            <% @category.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
-
     <div class="form-group">
       <%= f.label :title, 'Category title', :class => 'sr-only' %>
       <%= f.text_field :title, :class => 'form-control', :placeholder => 'Category title'  %>
     </div>
 
     <%= f.submit 'submit', :class => 'btn btn-success' %>
+    <% if @category.errors.any? %>
+        <div id="error_explanation">
+          <ul>
+            <% @category.errors.full_messages.each do |msg| %>
+                <li class="text-white"><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 <% end %>
