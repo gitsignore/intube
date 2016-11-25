@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
   def create
     @movie = Movie.find(params[:movie_id])
     @comment = @movie.comments.create(comment_params)
+    flash[:success] = "Comment added successfully."
     redirect_to movie_path(@movie)
   end
 

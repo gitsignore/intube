@@ -505,3 +505,9 @@ label:hover:before {
 .text-black {
     color: #111111;
 }
+
+.alert-success {
+    background-color: rgba(223, 240, 216, 0.8);
+    border-color: #d6e9c6;
+    color: #3c763d;
+}

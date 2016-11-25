@@ -29,8 +29,10 @@ class MoviesController < ApplicationController
     @movie = Movie.new(movie_params)
 
     if @movie.save
+      flash[:success] = "Video added successfully."
       redirect_to @movie
     else
+      flash[:warning] = "Form is invalid."
       render 'new'
     end
   end
@@ -39,8 +41,10 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
 
     if @movie.update(movie_params)
+      flash[:success] = "Video updated successfully."
       redirect_to @movie
     else
+      flash[:warning] = "Form is invalid."
       render 'edit'
     end
   end

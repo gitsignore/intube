@@ -22,8 +22,10 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
 
     if @category.save
+      flash[:success] = "Category added successfully."
       redirect_to @category
     else
+      flash[:warning] = "Form is invalid."
       render 'new'
     end
   end
@@ -32,8 +34,10 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
 
     if @category.update(category_params)
+      flash[:success] = "Category updated successfully."
       redirect_to @category
     else
+      flash[:warning] = "Form is invalid."
       render 'edit'
     end
   end
