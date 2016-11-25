@@ -1,24 +1,34 @@
-# README
+# inTube
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+inTube is an educational project realized in one day.
+ 
+The purpose was to realized a streaming web application.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+First, you need to clone this repository:
+```bash
+$ git clone https://github.com/TataneInYourFace/intube.git
+```
 
-* System dependencies
+Go in the application folder:
+```bash
+$ cd intube
+```
 
-* Configuration
+Install the application:
+```bash
+$ bundle install
+```
 
-* Database creation
+Load SQLite dump :
+```bash
+$ rake db:data:load
+```
 
-* Database initialization
+Execute the server :
+```bash
+$ bin/rails server
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In your browser go to : http://localhost:3000
