@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
+  get '/user' => 'users#show' , :as => 'user'
+  get '/user/edit' => 'users#edit', :as => 'edit_user'
+  patch '/user' => 'users#update', :as => 'update_user'
+
   resources :categories
 
   resources :movies do

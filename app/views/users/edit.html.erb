@@ -1,0 +1,18 @@
+<div class="row">
+
+  <div class="col-md-3">
+    <p class="lead">Edit profile</p>
+    <div class="list-group">
+      <%= link_to user_path, class: "list-group-item" do %>
+          <i class="glyphicon glyphicon-menu-left text-primary"></i> Back to profile
+      <% end %>
+    </div>
+  </div>
+
+  <div class="col-md-9">
+    <div class="row">
+      <%= render 'form' %>
+    </div>
+  </div>
+
+</div>

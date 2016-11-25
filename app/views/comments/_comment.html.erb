@@ -1,17 +1,13 @@
 <% if comment.body.present? %>
-    <div class="row">
-      <div class="col-md-12">
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star-empty"></span>
-        <%= comment.commenter %>
-        <span class="pull-right"><%= comment.created_at %></span>
-        <p><%= comment.body %></p>
-        <%= link_to 'Delete', [comment.movie, comment], method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-danger pull-right" %>
+    <div class="comment-main-level">
+      <div class="comment-box">
+        <div class="comment-head">
+          <h6 class="comment-name by-author"><a href="#"><%= comment.commenter %></a></h6>
+          <span class="pull-right"><%= comment.created_at.strftime("%B %d, %Y %H:%M") %></span>
+        </div>
+        <div class="comment-content">
+          <%= comment.body %>
+        </div>
       </div>
     </div>
-
-    <hr>
 <% end %>

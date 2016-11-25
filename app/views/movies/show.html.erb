@@ -30,26 +30,11 @@
         <h4><%= @movie.title %></h4>
         <p><%= @movie.text %></p>
       </div>
-      <!--<div class="ratings">
-        <p class="pull-right">3 reviews</p>
-        <p>
-          <span class="glyphicon glyphicon-star"></span>
-          <span class="glyphicon glyphicon-star"></span>
-          <span class="glyphicon glyphicon-star"></span>
-          <span class="glyphicon glyphicon-star"></span>
-          <span class="glyphicon glyphicon-star-empty"></span>
-          4.0 stars
-        </p>
-      </div>-->
     </div>
 
-    <div class="well">
+    <div class="response">
 
       <%= render 'comments/form' %>
-
-      <br>
-
-      <hr>
 
       <%= render @movie.comments %>
 
