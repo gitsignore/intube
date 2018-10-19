@@ -1,5 +1,7 @@
 # inTube
 
+[![GuardRails badge](https://badges.production.guardrails.io/gitsignore/intube.svg)](https://www.guardrails.io)
+
 inTube is an educational project realized in one day.
  
 The purpose was to realized a streaming web application.
